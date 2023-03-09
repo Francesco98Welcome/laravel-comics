@@ -1,4 +1,4 @@
-import './bootstrap';
+//import './bootstrap';
 
 // Importiamo il nostro stile custom
 import '~resources/scss/app.scss';

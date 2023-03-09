@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel 9 + Bootstrap Template</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {{-- Includiamo gli assets con la direttiva @vite --}}
-        @vite('resources/js/app.js')
-    </head>
-    <body>
+    <title>Laravel Comics</title>
 
-        <main>
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
+    {{-- Includiamo gli assets con la direttiva @vite --}}
+    @vite('resources/js/app.js')
+    <!-- Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"> -->
 
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ Vite::asset('resources/img/laravel.png') }}" alt="">
+</head>
 
-                                <h1 class="card-title">Laravel 9 + Bootstrap Template</h1>
-                            </div>
-                        </div>
+<body class="antialiased">
+    @include('partials.header')
 
-                    </div>
-                </div>
-            </div>
-        </main>
+    @include('partials.main')
 
-    </body>
+    @iclude('partials.footer')
+</body>
+
 </html>

@@ -1,20 +1,167 @@
 @import "~bootstrap/scss/bootstrap";
 
-.row {
-    > * {
-        height: 100vh;
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
 
+/* HEADER */
+
+header {
+
+    .container-header {
+        width: 90%;
+        margin: 0 auto;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
+        align-items: baseline;
+        padding-top: 10px;
 
-        color: lightcoral;
-        background-color: aquamarine;
-        background-image: url('../img/laravel.png');
-        background-size: 50px 50px;
+        .links {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
 img {
-    max-height: 150px;
+    width: 80px;
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+
+    .links-header {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 16px;
+        //line-height: calc(10vh - 7px);
+        text-transform: uppercase;
+
+        &:hover {
+            color: #0282f9;
+            border-bottom: 5px solid #0282f9;
+            cursor: pointer;
+        }
+    }
+}
+
+
+/* MAIN */
+
+main {
+    height: 40px;
+    margin-top: 12px
+}
+
+.jumb {
+    background-image: url('../images/jumbotron.jpg');
+    height: 400px;
+    background-size: cover;
+    position: relative;
+
+    button {
+        position: absolute;
+        top: 93%;
+        left: 7%;
+        background-color: #0282f9;
+        border: none;
+        color: white;
+        padding: 10px;
+    }
+}
+
+
+section {
+    background-color: #0b0b0b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .container-cards {
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+            width: calc(100% / 6);
+            background-color: #0b0b0b;
+            padding: 10px;
+
+            img {
+                object-fit: cover;
+                object-position: top;
+                width: 100%;
+                height: 150px;
+            }
+
+            h6 {
+                margin-top: 10px;
+                text-transform: uppercase;
+                color: white;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .btn {
+        margin: 0 auto;
+        width: 100%
+    }
+
+    .load-more {
+        padding: 3px 20px;
+        background-color: #0282f9;
+        color: white;
+        border: none;
+        width: 200px;
+    }
+}
+
+.iconLinkBlu {
+    background-color: #0282f9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+
+    .blu {
+        width: 90%;
+        margin: 0 auto;
+
+        >ul {
+            padding: 0;
+            padding-top: 10px;
+
+            :nth-child(4)>a>img {
+                width: 30px;
+            }
+        }
+    }
+
+    img {
+        width: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+/* FOOTER */
+
+.links-footer {
+    border: 1px solid black;
+    min-height: 50px;
+    background-image: url('../images/footer-bg.jpg');
+    background-size: cover;
+    background-color: red;
 }
