@@ -51,12 +51,81 @@ Route::get('/', function () {
             'title' => 'dc power visa'
         ]
     ];
+    $dcComicsLinks = [
+        [
+            'text' => 'characters',
+        ],
+        [
+            'text' => 'comics',
+        ],
+        [
+            'text' => 'Movies',
+        ],
+        [
+            'text' => 'TV',
+        ],
+        [
+            'text' => 'games',
+        ],
+        [
+            'text' => 'videos',
+        ],
+        [
+            'text' => 'news',
+        ],
+    ];
+    $shopLinks = [
+        [
+            'text' => 'Shop DC',
+        ],
+        [
+            'text' => 'Shop DC collectbiles'
+        ]
+    ];
+    $DC = [
+        [
+            'text' => 'Tems of use',
+        ],
+        [
+            'text' => 'Privacy policy(New)'
+        ],
+        [
+            'text' => 'Ad choices'
+        ],
+        [
+            'text' => 'Advertising'
+        ],
+        [
+            'text' => 'Jobs'
+        ],
+        [
+            'text' => 'Subscriptions'
+        ],
+        [
+            'text' => 'Talent workshops'
+        ],
+        [
+            'text' => 'CPSC Certificates'
+        ],
+        [
+            'text' => 'Ratings'
+        ],
+        [
+            'text' => 'Shop Help'
+        ],
+        [
+            'text' => 'Contact Us'
+        ]
+    ];
     return view(
         'welcome',
         [
             'links' => $links,
             'comics' => $data,
-            'iconLinkBlu' => $iconLinkBlu
+            'iconLinkBlu' => $iconLinkBlu,
+            'dcComicsLinks' => $dcComicsLinks,
+            'shopLinks' => $shopLinks,
+            'DC' => $DC
         ]
     );
 });

@@ -19,7 +19,7 @@
 
     @include('partials.main')
 
-    @iclude('partials.footer')
+    @include('partials.footer')
 </body>
 
 </html>

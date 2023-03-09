@@ -2,7 +2,7 @@
     <div class="container-header">
         <div class="logo"><img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt=""></div>
         <div class="links">
-            <ul>
+            <ul class="links-header">
                 @foreach ($links as $link)
                 <li class="links-header">
                     {{$link}}

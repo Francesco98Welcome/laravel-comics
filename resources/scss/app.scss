@@ -132,7 +132,7 @@ section {
     text-transform: uppercase;
 
     .blu {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
 
         >ul {
@@ -155,13 +155,37 @@ section {
     }
 }
 
-
-/* FOOTER */
-
-.links-footer {
-    border: 1px solid black;
-    min-height: 50px;
+.last-links {
+    height: 330px;
     background-image: url('../images/footer-bg.jpg');
     background-size: cover;
-    background-color: red;
+
+    .container-last-links {
+        width: 88%;
+        margin: 0 auto;
+        display: flex;
+        height: 100%;
+        padding-top: 8px;
+
+        >div {
+            height: 100%;
+            width: 15%;
+
+        }
+    }
 }
+
+.container-last-links>div>h3 {
+    color: white;
+    font-size: 22px;
+    padding-top: 13px;
+}
+
+.container-last-links>div>a {
+    line-height: 1.5;
+    text-decoration: none;
+    color: rgb(186, 183, 183);
+    font-size: 14px;
+}
+
+/* FOOTER */
