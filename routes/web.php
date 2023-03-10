@@ -117,6 +117,23 @@ Route::get('/', function () {
             'text' => 'Contact Us'
         ]
     ];
+    $sites = [
+        [
+            'text' => 'DC'
+        ],
+        [
+            'text' => ' MAD Magazine'
+        ],
+        [
+            'text' => 'DC Kids'
+        ],
+        [
+            'text' => 'DC Universe'
+        ],
+        [
+            'text' => 'DC Power Visa'
+        ]
+    ];
     return view(
         'welcome',
         [
@@ -125,7 +142,8 @@ Route::get('/', function () {
             'iconLinkBlu' => $iconLinkBlu,
             'dcComicsLinks' => $dcComicsLinks,
             'shopLinks' => $shopLinks,
-            'DC' => $DC
+            'DC' => $DC,
+            'sites' => $sites
         ]
     );
 });
